@@ -1,8 +1,12 @@
 //your JS code here. If required.
-let counter=0;
-console.log(counter)
-let button =document.getElementById("Btn");
-button.addEventListener('click',function (){
-	counter++;
-});
+let data = 0;
+
+//printing default value of data that is 0 in h2 tag
+document.getElementById("counting").innerText = data;
+
+//creation of increment function
+function increment() {
+    data = data + 1;
+    document.getElementById("counting").innerText = data;
+}
 
