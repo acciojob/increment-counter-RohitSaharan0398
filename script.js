@@ -1,12 +1,10 @@
 //your JS code here. If required.
-let data = 0;
 
-//printing default value of data that is 0 in h2 tag
-document.getElementById("counting").innerText = data;
+const btn =document.getElementById("incrementBtn")
+const counter=document.getElementById("counter")
+let c=0;
 
-//creation of increment function
-function increment() {
-    data = data + 1;
-    document.getElementById("counting").innerText = data;
-}
-
+btn.addEventListener('click', ()=>{
+	c++;
+	counter.innerText=c.toString()
+})
